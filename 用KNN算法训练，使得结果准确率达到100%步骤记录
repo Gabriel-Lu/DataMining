@@ -1,4 +1,4 @@
-
+# DataMinig0701
 ## 利用WEKA读取数据，用KNN算法训练，使得结果准确率达到100%步骤记录
    -     CMD输入java -jar weka.jar启动weka软件
    -     Preprocess中，在Filter中选择unsupervised 的Normalize，点击apply，进行归一化处理，使得几个指标的权重一样
