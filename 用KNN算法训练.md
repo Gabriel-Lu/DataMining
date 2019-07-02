@@ -13,3 +13,8 @@
              -     (FP) rate:False positive，被错误分类为class x的比率。
              -     Precision：类型为class x的instances被正确分类为class x的比率。
              -     特别的，如果要在UCI下载数据文件，由于UCI文件的格式是.data,直接读的话WEKA无法读取。因此我们需要改.data文件后缀名为.csv,再在WEKA启动栏的tool打开文件并保存为arff后缀的文件。再打开即可。（可能出现的错误：会丢失第一行的数据，因此我们需要在arff文件中加上属性并补充第一行的属性值）
+   -     Expolorer中Test options 评价模型效果的方法，有四个选项。 
+              -     a）Use training set：使用训练集，即训练集和测试集使用同一份数据，一般不使用这种方法。这种方法的precision也不总是100%
+              -     b）Supplied test set：设置测试集，可以使用本地文件或者url，测试文件的格式需要跟训练文件格式一致。 
+              -     c）Cross-validation：交叉验证，很常见的验证方法。N-folds cross-validation是指，将训练集分为N份，使用N-1份做训练，使用1份做测试，如此循环N次，最后整体计算结果。 常常设置N为5或者10.
+             -     d）Percentage split：按照一定比例，将训练集分为两份，一份做训练，一份做测试。常常是80%和20%；在这些验证方法的下面，有一个More options选项，可以设置一些模型输出，模型验证的参数。，还可以在random seed中调节随机种子的值，若不调节，则每次的伪随机种子都是一样的。
