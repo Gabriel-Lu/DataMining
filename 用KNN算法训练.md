@@ -12,3 +12,4 @@
              -     (TP) rate:True positive，被正确分类为class x的比率。
              -     (FP) rate:False positive，被错误分类为class x的比率。
              -     Precision：类型为class x的instances被正确分类为class x的比率。
+             -     特别的，如果要在UCI下载数据文件，由于UCI文件的格式是.data,直接读的话WEKA无法读取。因此我们需要改.data文件后缀名为.csv,再在WEKA启动栏的tool打开文件并保存为arff后缀的文件。再打开即可。（可能出现的错误：会丢失第一行的数据，因此我们需要在arff文件中加上属性并补充第一行的属性值）
