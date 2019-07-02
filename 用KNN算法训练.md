@@ -18,3 +18,4 @@
               -     b）Supplied test set：设置测试集，可以使用本地文件或者url，测试文件的格式需要跟训练文件格式一致。 
               -     c）Cross-validation：交叉验证，很常见的验证方法。N-folds cross-validation是指，将训练集分为N份，使用N-1份做训练，使用1份做测试，如此循环N次，最后整体计算结果。 常常设置N为5或者10.
              -     d）Percentage split：按照一定比例，将训练集分为两份，一份做训练，一份做测试。常常是80%和20%；在这些验证方法的下面，有一个More options选项，可以设置一些模型输出，模型验证的参数。，还可以在random seed中调节随机种子的值，若不调节，则每次的伪随机种子都是一样的。
+   -     Overfitting:过度拟合问题，广泛存在于机器学习中。训练出来的分类规则过度细致繁琐，比如每个规则都对应了一个将要预报的天气，导致实际使用效果并不好。solution:划分整个数据集为train,test,validation.train和test用于选择机器学习的方法，validation用于验证方法。
