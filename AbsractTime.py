@@ -24,8 +24,16 @@ for item in reader:
             writer.writerow([item[i]])
 #关闭再打开prisonFile,从而可以从文件头部开始读取
 prisonFile.close()
-with open("prisonFile.csv","r") as pf:
-    print(pf.readlines())
+'''
+打开“待删除换行符的已转化了的（1）.txt"，每个事件之间按照EEENNNDDD分开的
+用正则表达式
+若匹配到”有期徒刑x年y月“,则向该一维数组中插入(x*12+y)个月;
+x,y的缺省值为0
+否则，count++
+至此，有期徒刑的一维数组完全形成
+；;;缓刑的年限同理
+'''
+
 
 
 csvFile.close()
