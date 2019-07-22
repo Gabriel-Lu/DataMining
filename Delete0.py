@@ -48,11 +48,11 @@ with open(filename) as f:
                 with open(nFile, 'a') as nf:
                     writer = csv.writer(nf)
                     writer.writerow([row[-2]])
-                    writer.writerow(',')
+                    #writer.writerow('')
         else:
             with open(nFile, 'a') as nf:
                 writer = csv.writer(nf)
-                writer.writerow(['--------------'])
+                writer.writerow(['EEENNNDDD'])
 
 #把积极事件因素写入到文件positive.csv中
 pFile='/home/tabrielluunn/PycharmProjects/untitled/positive.csv'
@@ -69,7 +69,7 @@ with open(filename) as f:
                 with open(pFile, 'a') as pf:
                     writer = csv.writer(pf)
                     writer.writerow([row[-2]])
-                    writer.writerow(',')
+                    #writer.writerow('')
             if (row[-1] == 'SP'):
                 with open(pFile, 'a') as pf:
                     writer = csv.writer(pf)
@@ -77,32 +77,8 @@ with open(filename) as f:
         else:
             with open(pFile, 'a') as pf:
                 writer = csv.writer(pf)
-                writer.writerow(['--------------'])
+                writer.writerow(['EEENNNDDD'])
 
-#把事件结果因素写入到文件result.csv中
-rFile='/home/tabrielluunn/PycharmProjects/untitled/result.csv'
-with open(filename) as f:
-    reader=csv.reader(f)
-    for row in reader:
-        #print(row[-1]) #TESTING
-        if(row[-1]!='O'): #如果该行不是标识案例间分割线的1,2,3...
-            if(row[-1] == "BR"):
-                with open(rFile,'a') as rf:
-                    writer=csv.writer(rf)
-                    writer.writerow([row[-2]])
-            if (row[-1] == 'IR'):
-                with open(rFile, 'a') as rf:
-                    writer = csv.writer(rf)
-                    writer.writerow([row[-2]])
-            if (row[-1] == 'ER'):
-                with open(rFile, 'a') as rf:
-                    writer = csv.writer(rf)
-                    writer.writerow([row[-2]])
-                    writer.writerow(',')
 
-        else:
-            with open(rFile, 'a') as rf:
-                writer = csv.writer(rf)
-                writer.writerow(['--------------'])
 
 
