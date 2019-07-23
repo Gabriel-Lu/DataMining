@@ -1,5 +1,6 @@
 #-*- coding: utf-8 -*-
 #function: Delete O type but not number row in csv file
+#可以得到各个bool型的事件因素的矩阵
 
 import pandas as pd
 import csv
