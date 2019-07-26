@@ -16,4 +16,6 @@
 - prisonMonthAbs其实抽取出来的是x年y.我们只取字符串最后一个字符y即可
 
 ## 汉字数字表示转化成阿拉伯数字表示： 字典
-
+![Alt Text](https://github.com/Gabriel-Lu/DataMining/blob/master/1 )
+![Alt Text](https://github.com/Gabriel-Lu/DataMining/blob/master/2 )
+![Alt Text](https://github.com/Gabriel-Lu/DataMining/blob/master/3)
